@@ -36,7 +36,8 @@ services:
     image: nginx:alpine
     ports:
       # localhost only: open it through an SSH tunnel (ssh -L 8088:localhost:8088 ...)
-      - "127.0.0.1:${TOY_PORT:-8088}:80"
+      #- "127.0.0.1:${TOY_PORT:-8088}:80"
+      - "${TOY_PORT:-8088}:80"
     volumes:
       - secrets:/run/secrets:ro
       - ./web/render-page.sh:/docker-entrypoint.d/40-render-page.sh:ro
