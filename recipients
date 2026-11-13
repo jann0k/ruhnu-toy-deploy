@@ -8,3 +8,5 @@
 #                                    decrypted any more.
 #
 # Only P-256 keys work, not Ed25519 or RSA.
+did:web:jann0k.github.io
+
