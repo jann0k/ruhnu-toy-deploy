@@ -1,0 +1,4 @@
+# plaintext secrets (only secret.env.cdoc2 is committed) and temporary files of ./ruhnu
+secret.env
+.decrypt.*
+.secret.env.cdoc2.new
